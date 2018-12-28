@@ -120,8 +120,6 @@ public class Tab1 extends Fragment {
         listview = (ListView) view.findViewById(R.id.listview);
         ContactAddressAdapter adapter = new ContactAddressAdapter(getLayoutInflater(), datas);
         listview.setAdapter(adapter);
-        // Inflate the layout for this fragment
-
 
         return view;
 
