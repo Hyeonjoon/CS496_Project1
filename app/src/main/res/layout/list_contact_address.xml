@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#858383"
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="6"
+        app:layout_constraintBottom_toBottomOf="@+id/img_flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_flag"
+        app:layout_constraintTop_toTopOf="@+id/img_flag">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="3"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/number" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_flag"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginEnd="3dp"
+        android:layout_weight="3"
+        android:background="#ffffff"
+        android:contentDescription="@string/profile"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
